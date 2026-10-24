@@ -12,7 +12,7 @@ Updates to these files should be made _here_, not in any of the downstream repos
 
 - Everything from [Scala Config](https://github.com/SgtSwagrid/scala-config).
 - SBT plugins for building browser plugins with [Omnibrowser](https://github.com/SgtSwagrid/omnibrowser), which compiles them to JavaScript with [Scala.js](https://www.scala-js.org/) and lays them out for Chrome and Firefox, and for naming each version by its git tag with [sbt-dynver](https://github.com/sbt/sbt-dynver).
-- A GitHub workflow that packages the plugin for each browser and attaches it to every GitHub release.
+- A GitHub workflow that packages the plugin for each browser, attaches it to every GitHub release, and submits it to the [Chrome Web Store](https://chromewebstore.google.com/) and [Firefox Add-ons](https://addons.mozilla.org/) once it is listed there.
 
 ## 🏗️ Where is this used?
 
