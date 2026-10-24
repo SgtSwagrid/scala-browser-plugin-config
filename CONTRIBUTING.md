@@ -27,6 +27,16 @@ All work happens on short-lived feature branches, which are merged into `main` b
 Releases are by [tag](https://docs.github.com/en/repositories/releasing-projects-on-github/viewing-your-repositorys-releases-and-tags),
 and there are no separate release branches.
 
+## 📢 Publishing Workflow
+
+Each GitHub release is packaged for every browser upon creation, and the packages are attached to the release as zip files, ready to be uploaded to each browser's store.
+The version is taken from the release's tag, using [sbt-dynver](https://github.com/sbt/sbt-dynver).
+
+### Example
+
+To release version `1.2.3`, go to **Releases → Draft a new release**, create the tag `v1.2.3`, and click **Publish release**.
+Note the inclusion of `v` in the GitHub release name but not the resulting version.
+
 ## 🤖 LLM Agent Usage
 
 The use of agents where it makes sense is allowed and encouraged.
@@ -50,6 +60,6 @@ For questions or issues, please use the GitHub issue tracker.
 
 ## 🔁 Origin
 
-The primary source of truth for this document can be found in the [Scala Config](https://github.com/SgtSwagrid/scala-config) repository,
+The primary source of truth for this document can be found in the [Scala Browser Plugin Config](https://github.com/SgtSwagrid/scala-browser-plugin-config) repository,
 from which it is automatically synchronised with [Github Graph](https://github.com/SgtSwagrid/github-graph).
 This should be updated there rather than here, lest any changes be subsequently reverted.

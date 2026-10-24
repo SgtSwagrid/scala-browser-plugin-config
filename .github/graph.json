@@ -9,16 +9,8 @@
     {
       "target": {
         "owner": "SgtSwagrid",
-        "name": "scala-website-config"
+        "name": "scala-browser-plugin-template"
       }
-    }, {
-      "target": {
-        "owner": "SgtSwagrid",
-        "name": "scala-library-config"
-      },
-      "ignore": [
-        "CONTRIBUTING.md"
-      ]
     }
   ]
 }
