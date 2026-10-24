@@ -1,0 +1,24 @@
+{
+  "ignore": [
+    "README.md",
+    ".github/graph.json",
+    ".github/workflows/sync.yml",
+    "build.sbt"
+  ],
+  "children": [
+    {
+      "target": {
+        "owner": "SgtSwagrid",
+        "name": "scala-website-config"
+      }
+    }, {
+      "target": {
+        "owner": "SgtSwagrid",
+        "name": "scala-library-config"
+      },
+      "ignore": [
+        "CONTRIBUTING.md"
+      ]
+    }
+  ]
+}
