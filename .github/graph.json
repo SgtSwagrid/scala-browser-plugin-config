@@ -11,6 +11,15 @@
         "owner": "SgtSwagrid",
         "name": "scala-browser-plugin-template"
       }
+    },
+    {
+      "target": {
+        "owner": "SgtSwagrid",
+        "name": "codeswitch"
+      },
+      "ignore": [
+        "LICENSE.md"
+      ]
     }
   ]
 }
