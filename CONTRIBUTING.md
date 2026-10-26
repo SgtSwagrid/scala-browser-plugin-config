@@ -56,7 +56,8 @@ Variables and secrets are added under **Settings → Secrets and variables → A
 #### Firefox Add-ons
 
 1. In the [Developer Hub](https://addons.mozilla.org/developers/addon/submit/distribution), submit a new add-on to be listed on the site, from the `-firefox.zip` attached to a release.
-   The add-on is compiled to JavaScript, so Mozilla asks for its source: upload the release's **Source code (zip)**, and give the build command, `sbt "set ThisBuild / version := \"1.2.3\"; omnibrowserPackage"` (with the release's version), which needs JDK 21, sbt and Node.js.2. Add the variable `FIREFOX_ADDON_SLUG`: the add-on's name in its address, `addons.mozilla.org/firefox/addon/<slug>`, which until it is approved appears only in the Developer Hub's, `addons.mozilla.org/developers/addon/<slug>`.
+   The add-on is compiled to JavaScript, so Mozilla asks for its source: upload the release's **Source code (zip)**, and give the build command, `sbt "set ThisBuild / version := \"1.2.3\"; omnibrowserPackage"` (with the release's version), which needs JDK 21, sbt and Node.js.
+2. Add the variable `FIREFOX_ADDON_SLUG`: the add-on's name in its address, `addons.mozilla.org/firefox/addon/<slug>`, which until it is approved appears only in the Developer Hub's, `addons.mozilla.org/developers/addon/<slug>`.
 3. Unless they are already set, add the secrets `AMO_API_KEY` and `AMO_API_SECRET`, the issuer and secret of your [API credentials](https://addons.mozilla.org/developers/addon/api/key/).
 
 Later versions are submitted with their source and build command attached.
